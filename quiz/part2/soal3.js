@@ -1,10 +1,10 @@
 // ## Soal 3
 // ```js
 function hitungJumlahKata(kalimat) {
-  let kata = kalimat.split(" ")
-  let count = 0;
-  for(let i = 0;i<kata.length;i++){
-    count++;
+  let count = 1;
+  for(let i = 0;i<kalimat.length;i++){
+    if(kalimat[i] === " "){
+    count++;}
   }
   return count;
 }
